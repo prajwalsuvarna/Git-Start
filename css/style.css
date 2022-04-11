@@ -116,9 +116,10 @@ header{
 }
 
 section h1,h2{
-    background-color: ;
+background-color:	#607B8B ;
+color:aliceblue;
 display: inline-block;
-width:50vw;
+width:30vw;
 padding :0 0.5rem;
 }
 /* footer */
