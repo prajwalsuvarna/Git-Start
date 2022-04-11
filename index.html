@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitStart</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="/images/github.png" alt="" srcset="">GitStart</div>
+       
+        <nav id="navbar">
+            <ul class="nav_links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#content">Content</a></li>
+                <li><a href="#tags">Tags</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="description">
+          <span ><strong>WELCOME TO GITSTART</strong></span>
+            <p>Gitstart is a website which will help you equip with all essentials git commands which are useful to work
+                on Git and Github. </p>
+        </div>
+        <div class="home_pg">
+            <img src="/images/gitdp.jpg" alt="" srcset="">
+        </div>
+    </section>
+    <section id="about">
+        <h1>ABOUT GIT AND GITHUB</h1>
+        <div id="sent-1">Git is a free and open-source distributed verrsion control system that's responsible for
+            everything on Github related that happens locally on your computer</div>
+        <div id="sent-2">The commands below features the most important and commanly used Git commands for reference
+        </div>
+    </section>
+    <section id="content">
+        <h2>INSTALLATION & GUIS</h2>
+        <div>With platform specific installaers for Git,Github also provides the ease of staying up-to-date with the
+            latest releases of the command line tool while providing a graphical user interface for day-to-day
+            interaction,review ,and repository synchronisation</div>
+        <div>
+            <h3>Github for windows</h3>
+            <button><a href="https://windows.github.com">CLICK HERE</a>
+        </div></button>
+        <div>
+            <h3>Github for Mac</h3>
+            <button><a href="https://mac.github.com">CLICK HERE</a>
+        </div></button>
+        <P>For Linux and Solaris platforms, the latest release is available on
+            the official Git web site</P>
+        <div>
+            <h3>Git for All platforms</h3>
+            <button><a href="http://git-scm.com">CLICK HERE</a>
+        </div></button>
+        </div>
+    </section>
+    <section id="tags">
+        <h2>TAGS</h2>
+        <ul class="nav_links">
+            
+            <li><a href="#setup">SETUP</a></li>
+            <li><a href="#stg-snpsht">STAGE & SNAPSHOT</a></li>
+            <li><a href="#set-init">SETUP & INIT</a></li>
+            <li><a href="#brnch-mrg">BRANCH & MERGE</a></li>
+            <li><a href="#ispct-cmpr">INSPECT & COMPARE</a></li>
+            <li><a href="#shr-upt">SHARE & UPDATE</a></li>
+            <li><a href="#rewrt-hr">REWRITE HISTORY</a></li>
+            <li><a href="#ign-patterns">IGNORING PATTERNS</a></li>
+            <li><a href="#tmp-cmt">TEMPORARY COMMITS</a></li>
+            <li><a href="#trk-path">TRACKING PATH CHANGES</a></li>
+     </section>
+    <section id="setup">
+        <h2>SETUP</h2>
+        <p>Configuring user information used across all local repositories</p>
+        <div class="Cmd-dsr">
+            <span>git config --global user.name "[firstname lastname]"
+            </span>
+            <p>set a name that is identifiable for credit when review version history</p>
+        </div>
+        <div class="Cmd-dsr"> <span>git config --global user.email “[valid-email]”
+            </span>
+            <p>set a name that is identifiable for credit when review version history</p>
+        </div>
+        <div class="Cmd-dsr">
+            <span>git config --global color.ui auto
+            </span>
+            <p>set a name that is identifiable for credit when review version history</p>
+        </div>
+    </section>
+    <section id="set-init">
+        <h2>SETUP & INIT</h2>
+        <p>Configuring user information, initializing and cloning repositories</p>
+        <div class="Cmd-dsr">
+            <span>git init
+            </span>
+            <p>initialize an existing directory as a Git repository</p>
+        </div>
+        <div class="Cmd-dsr"><span>git clone [url]
+            </span>
+            <p>retrieve an entire repository from a hosted location via URL</p>
+        </div>
+    </section>
+    <section id="stg-snpsht">
+        <h2>STAGE & SNAPSHOT</h2>
+        <p>Working with snapshots and the Git staging area</p>
+        <div class="Cmd-dsr">
+            <span>git status
+            </span>
+            <p>show modified files in working directory, staged for your next commity</p>
+        </div>
+        <div class="Cmd-dsr"><span>git add [file]
+            </span>
+            <p>add a file as it looks now to your next commit (stage)</p>
+        </div>
+        <div class="Cmd-dsr"><span>git reset [file]
+            </span>
+            <p>unstage a file while retaining the changes in working directory</p>
+        </div>
+        <div class="Cmd-dsr"><span>git diff
+            </span>
+            <p>diff of what is changed but not staged</p>
+        </div>
+        <div class="Cmd-dsr"><span>git diff --staged
+            </span>
+            <p>diff of what is staged but not yet commited</p>
+        </div>
+        <div class="Cmd-dsr"><span>git commit -m “[descriptive message]”
+            </span>
+            <p>commit your staged content as a new commit snapshot
+            </p>
+        </div>
+    </section>
+    <section id=""></section>
+    <section id="brnch-mrg">
+        <h2>BRANCH & MERGE</h2>
+        <p>Isolating work in branches, changing context, and integrating changes</p>
+        <div class="Cmd-dsr">
+            <span>git branch
+            </span>
+            <p>list your branches. a * will appear next to the currently active branch</p>
+        </div>
+        <div class="Cmd-dsr">
+            <span>git branch [branch-name]
+            </span>
+            <p>create a new branch at the current commit</p>
+        </div>
+        <div class="Cmd-dsr">
+            <span>git checkout
+            </span>
+            <p>switch to another branch and check it out into your working directory</p>
+        </div>
+        <div class="Cmd-dsr">
+            <span>git merge [branch]
+            </span>
+            <p>merge the specified branch’s history into the current one</p>
+        </div>
+        <div class="Cmd-dsr">
+            <span>git log
+            </span>
+            <p>show all commits in the current branch’s history</p>
+        </div>
+    </section>
+    <section id="ispct-cmpr">
+        <h2>INSPECT & COMPARE</h2>
+        <p>Examining logs, diffs and object information</p>
+        <div class="Cmd-dsr">
+            <span>git log
+            </span>
+            <p>show the commit history for the currently active branch</p>
+        </div>
+        <div class="Cmd-dsr"> <span>git log branchB..branchA
+            </span>
+            <p>show the commits on branchA that are not on branchB</p>
+        </div>
+        <div class="Cmd-dsr"><span>git log --follow [file]
+            </span>
+            <p>show the commits that changed file, even across renames</p>
+        </div>
+        <div class="Cmd-dsr">
+            <span>git diff branchB...branchA
+            </span>
+            <p>show the diff of what is in branchA that is not in branchB</p>
+        </div>
+        <div class="Cmd-dsr"><span>git show [SHA]
+            </span>
+            <p>show any object in Git in human-readable format</p>
+        </div>
+    </section>
+    <section id="shr-upt">
+        <h2>SHARE & UPDATE</h2>
+        <p>Configuring user information, initializing and cloning repositories</p>
+        <div class="Cmd-dsr">
+            <span>git remote add [alias] [url]
+            </span>
+            <p>add a git URL as an alias</p>
+        </div>
+        <div class="Cmd-dsr"> <span>git fetch [alias]
+            </span>
+            <p>fetch down all the branches from that Git remote</p>
+        </div>
+        <div class="Cmd-dsr">
+            <span>git merge [alias]/[branch]
+            </span>
+            <p>merge a remote branch into your current branch to bring it up to date</p>
+        </div>
+        <div class="Cmd-dsr"><span>git push [alias] [branch]
+            </span>
+            <p>Transmit local branch commits to the remote repository branch</p>
+        </div>
+        <div class="Cmd-dsr">
+            <span>git pull
+            </span>
+            <p>fetch and merge any commits from the tracking remote branch</p>
+        </div>
+    </section>
+    <section id="trk-path">
+        <h2>TRACKING PATH CHANGES</h2>
+        <p>Versioning file removes and path changes</p>
+        <div class="Cmd-dsr">
+            <span>git rm [file]
+            </span>
+            <p>delete the file from project and stage the removal for commit</p>
+        </div>
+        <div class="Cmd-dsr">
+            <span>git mv [existing-path] [new-path]
+            </span>
+            <p>change an existing file path and stage the move</p>
+        </div>
+        <div class="Cmd-dsr">
+            <span>git log --stat -M
+            </span>
+            <p>show all commit logs with indication of any paths that moved</p>
+        </div>
+    </section>
+    <section id="rewrt-hr">
+        <h2>REWRITE HISTORY</h2>
+        <p>Rewriting branches, updating commits and clearing history</p>
+        <div class="Cmd-dsr">
+            <span>git rebase [branch]
+            </span>
+            <p>apply any commits of current branch ahead of specified one</p>
+        </div>
+        <div class="Cmd-dsr"><span>git reset --hard [commit]
+            </span>
+            <p>clear staging area, rewrite working tree from specified commit</p>
+        </div>
+    </section>
+    <section id="ign-patterns">
+        <h2>IGNORING PATTERNS</h2>
+        <p>Preventing unintentional staging or commiting of files</p>
+        <div class="Cmd-dsr">
+            <span>logs/<br>
+                *.notes<br>
+                pattern*/
+            </span>
+            <p>Save a file with desired paterns as .gitignore with either direct string
+                matches or wildcard globs</p>
+        </div>
+        <div class="Cmd-dsr"><span>git config --global core.excludesfile [file]
+            </span>
+            <p>system wide ignore patern for all local repositories</p>
+        </div>
+    </section>
+    <section id="tmp-cmt">
+        <h2>TEMPORARY COMMITS</h2>
+        <p>Temporarily store modified, tracked files in order to change branches</p>
+        <div class="Cmd-dsr">
+            <span>git stash
+            </span>
+            <p>initialize an existing directory as a Git repository</p>
+        </div>
+        <div class="Cmd-dsr"><span>git stash list
+            </span>
+            <p>retrieve an entire repository from a hosted location via URL</p>
+        </div>
+        <div class="Cmd-dsr">
+            <span>git stash pop
+            </span>
+            <p>retrieve an entire repository from a hosted location via URL</p>
+        </div>
+        <div class="Cmd-dsr"><span>git stash drop
+            </span>
+            <p>retrieve an entire repository from a hosted location via URL</p>
+        </div>
+    </section>
+    <footer id="contact-us">
+     <div class="moto">MADE WITH LOVE</div>
+    <a href="https://github.com/prajwalsuvarna"> <i class="fa fa-github"></i></a>
+    </footer>
+</body>
+
+</html>
